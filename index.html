@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" type="text/css" href="media/main.css"/>
+        <script type="text/javascript" src="media/jquery-1.8.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        $(function() {
+    var $sel = {
+      radio: $('input:radio'),
+      correct: $('.correctA'),
+      incorrect: $('.IncorrectA')
+    }
+    $sel.radio.click(function() {
+      if(($("input.rbA").is(':checked') === true)) {
+        $sel.correct.removeClass('hidden');
+        $sel.radio.attr('disabled', true);
+      } else {
+        $sel.incorrect.removeClass('hidden');
+        $sel.radio.attr('disabled', true);
+      }
+    });
+  });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+        <div id="textSection"> 
+       Chloe's brother is now a 28–week old neonate and still in the NICU. Her parents tell you that four–year–old Chole has begun to wet her pants again and is acting out. You explain that: 
+      <span class="instructions">(select the appropriate response.)</span>
+        <div id="test">
+      <div class="radioBtn"><input type="radio" class=" rbA" name="q1"  />Children between two and six have magical thinking. They must be told they did nothing wrong to cause their sibling's illness</div>
+      <div class="radioBtn"><input type="radio" class=" rbB" name="q1"  />Siblings should be spared knowing too much of what is happening to their sibling, because it may be too upsetting.</div>
+      <div class="radioBtn"><input type="radio" class=" rbC" name="q1"  />It is best if they send the sibling to live with a neighbor until the baby is able to come home.</div>
+      <div class="radioBtn"><input type="radio" class="rbD" name="q1"  />It is best that the sibling be taken to a psychiatrist.</div>
+        </div>
+        </div>
+        <div class="correctA hidden answers">
+  			<div class="sectionTitle">Correct!</div>
+		  <div class="space">The correct response is that children between two and six have magical thinking. They must be told they did nothing wrong to cause their sibling's illness. Regressing back to a previous behavior such a wetting the pants and acting out are normal behaviors at this time.</div>
+  		</div>
+  		<div class="IncorrectA hidden answers"> 
+  			<div class="sectionTitle">Incorrect.</div>
+			<div class="space">The correct response is that children between two and six have magical thinking. They must be told they did nothing wrong to cause their sibling's illness. Regressing back to a previous behavior such a wetting the pants and acting out are normal behaviors at this time.</div>
+  		</div>
+  		
+        </div>
+    </body>
+</html>   	

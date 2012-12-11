@@ -1,0 +1,36 @@
+body {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+#wrapper {
+width: 550px; 
+height: 430px;
+overflow: hidden; 
+}
+
+.space{margin-bottom:10px;}
+
+.instructions {font-style: italic;}
+.hidden {display: none;}
+.sectionTitle {font-weight: bold;}
+
+
+#test {margin-top: 10px;}
+.radioBtn {padding-bottom: 10px;}
+
+.correctA {
+	background:#CFC;
+	border:1px solid #090;
+}
+
+.IncorrectA {
+	background:#FFD2CC;
+	border: 1px solid #991200;
+}
+
+
+.answers {
+	float: left;
+	padding: 2px;
+}
